@@ -6,6 +6,8 @@
 
 ## 安装
 
+本包没有经过测试, 有什么问题自己解决吧~
+
 ```ssh
 ## npm
 npm install --save @lianluoo/vue2-form-antdv
