@@ -4,6 +4,8 @@
 
  import createVue2Core, { fieldProps, SchemaField } from '@lljj/vue2-form-core';
 
+//  import createVue2Core, { fieldProps, SchemaField } from '@lianluoo/vue2-form-core/src/index';
+
  import i18n from '@lljj/vjsf-utils/i18n';
  import * as vueUtils from '@lljj/vjsf-utils/vueUtils';
  import * as formUtils from '@lljj/vjsf-utils/formUtils';

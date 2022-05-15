@@ -24,20 +24,7 @@ export default {
     types: {
         boolean: SwitchWidget,
         string: InputWidget,
-        // string: {
-        //     functional: true,
-        //     render(h, context) {
-        //         const oldinput = context.data.on.input
-        //         context.data.on = {
-        //             ...context.data.on,
-        //             change(val) {
-        //                 console.log('val :>> ', val);
-        //                 oldinput.apply(context.data.on, val.target.value)
-        //             }
-        //         }
-        //         return h('a-input', context.data, context.children)
-        //     }
-        // },
+        
         number: InputNumber,
         integer: InputNumber,
     },

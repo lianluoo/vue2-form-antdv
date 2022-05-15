@@ -7,6 +7,7 @@ export default {
     context.data.on = {
       ...context.data.on,
       change(val) {
+        console.log('switch val :>> ', val);
         oldinput.apply(context.data.on, [val])
       }
     }

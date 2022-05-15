@@ -14,5 +14,6 @@ export default {
         oldinput.apply(context.data.on, val)
       }
     }
+    return h('a-input', context.data, context.children)
   }
 }

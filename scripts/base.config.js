@@ -7,7 +7,8 @@ const commonjs = require('rollup-plugin-commonjs');
 const filesize = require('rollup-plugin-filesize');
 const postcss = require('rollup-plugin-postcss');
 // const buble = require('rollup-plugin-buble');
-const babel = require('rollup-plugin-babel');
+const babel = require('rollup-plugin-babel')
+// const {babel} = require('@rollup/plugin-babel')
 const del = require('rollup-plugin-delete');
 const vue = require('rollup-plugin-vue');
 const json = require('rollup-plugin-json');
@@ -86,6 +87,7 @@ module.exports = ({
             babel({
                 exclude: /node_modules\/(?!(@lljj)\/).*/,
                 extensions: ['.js', '.vue'],
+                // babelHelpers: 'bundled'  // 当启用沙箱 polyfill 时，需要设定为 runtime
             }),
             postcss({
                 extract: config.extractcss
